@@ -23,7 +23,7 @@ placemarkAttributes.labelAttributes.offset = new WorldWind.Offset(
     WorldWind.OFFSET_FRACTION, 1.0);
 
 placemarkAttributes.imageSource = WorldWind.configuration.baseUrl + "images/pushpins/plain-red.png";
-*/
+
 
 var position = new WorldWind.Position(55.0, -106.0, 100.0);
 var placemark = new WorldWind.Placemark(position, false, placemarkAttributes);
@@ -34,8 +34,10 @@ placemark.label = "Placemark\n" +
 placemark.alwaysOnTop = true;
 
 placemarkLayer.addRenderable(placemark);
+*/
 
 // Add a polygon
+/*
 var polygonLayer = new WorldWind.RenderableLayer();
 wwd.addLayer(polygonLayer);
 
@@ -66,7 +68,7 @@ colladaLoader.load("duck.dae", function (colladaModel) {
     colladaModel.scale = 9000;
     modelLayer.addRenderable(colladaModel);
 });
-
+*/
 // Add WMS imagery
 var serviceAddress = "https://neo.gsfc.nasa.gov/wms/wms?version=1.3.0&service=WMS&request=GetCapabilities";
 var layerName = "MOD_LSTD_CLIM_M";
