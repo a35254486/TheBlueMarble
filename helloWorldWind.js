@@ -71,7 +71,7 @@ colladaLoader.load("duck.dae", function (colladaModel) {
 */
 // Add WMS imagery
 var serviceAddress = "https://neo.gsfc.nasa.gov/wms/wms?version=1.3.0&service=WMS&request=GetCapabilities";
-var layerName = "MOD_LSTD_CLIM_M";
+var layerName = "BlueMarbleNG-TB&date=2004-12-01";
 
 var createLayer = function (xmlDom) {
     var wms = new WorldWind.WmsCapabilities(xmlDom);
