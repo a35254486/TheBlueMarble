@@ -1,4 +1,4 @@
-// Create a WorldWindow for the canvas.
+/*// Create a WorldWindow for the canvas.
 var wwd = new WorldWind.WorldWindow("canvasOne");
 
 wwd.addLayer(new WorldWind.BMNGOneImageLayer());
@@ -7,6 +7,25 @@ wwd.addLayer(new WorldWind.BMNGLandsatLayer());
 wwd.addLayer(new WorldWind.CompassLayer());
 wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
 wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+*/
+
+// Create a WorldWindow for the canvas.
+var wwd = new WorldWind.WorldWindow("canvasOne");
+
+// OLD, PIXELATED LAYER IS REMOVED:
+// wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+// NEW, HIGH-QUALITY LAYER IS ADDED:
+// It will look in your 'images' folder for a file named 'PathfinderMap.jpg'
+wwd.addLayer(new WorldWind.SurfaceImageLayer(WorldWind.Sector.FULL_SPHERE, "images/PathfinderMap.jpg"));
+
+// These other layers for controls are good. Keep them.
+wwd.addLayer(new WorldWind.CompassLayer());
+wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+// ... the rest of your polygon and model code remains the same ...
+
 
 // Add a placemark
 /*
