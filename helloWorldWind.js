@@ -2,10 +2,8 @@
 var wwd = new WorldWind.WorldWindow("canvasOne");
 /*
 wwd.addLayer(new WorldWind.BMNGOneImageLayer());*/
-// IMPORTANT: Replace 'your-image-name.jpg' with the actual name of your image file.
-// For example: 'images/earth-8k.jpg'
 
-wwd.addLayer(new WorldWind.SurfaceImageLayer(WorldWind.Sector.FULL_SPHERE, "images/PathfinderMap.jpg"));
+wwd.addLayer(new "images/PathfinderMap.jpg"));
 
 wwd.addLayer(new WorldWind.BMNGLandsatLayer());
 
