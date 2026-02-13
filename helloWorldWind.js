@@ -1,7 +1,7 @@
 // Create a WorldWindow for the canvas.
 var wwd = new WorldWind.WorldWindow("canvasOne");
-/*
-wwd.addLayer(new WorldWind.BMNGOneImageLayer());*/
+
+wwd.addLayer(new WorldWind.BMNGOneImageLayer());
 
 /*wwd.addLayer(new "images/PathfinderMap.jpg"));*/
 
